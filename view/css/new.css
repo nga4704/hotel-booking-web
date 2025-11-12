@@ -1,0 +1,402 @@
+.container-avatar {
+    max-width: 200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 200px;
+    margin: 0px auto;
+    margin-left: -10px;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+
+#imageUpload {
+    display: none;
+}
+
+#imageUpload,
+#label-input-file {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+#imageUpload:hover,
+#label-input-file:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+#imageUpload:after,
+#label-input-file:after {
+    content: "\f040";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+
+}
+
+#label-input-file i {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-top: 8px;
+    /* padding: 5px; */
+}
+
+.avatar-preview {
+    width: 172px;
+    height: 172px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+#imagePreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup-form {
+    position: relative;
+    text-align: center;
+}
+
+.signup-btn {
+    left: 50%;
+    bottom: 10px;
+}
+
+.testimonial-slider .ts-item img {
+    max-height: 200px;
+}
+
+.testimonial-slider .ts-item .ti-author .rating .icon_star {
+    color: #f5b917;
+    font-size: 16px;
+}
+
+.testimonial-slider .ts-item .ti-author .rating .icon_star_alt {
+    color: #f5b917;
+    font-size: 16px;
+}
+
+/* Ẩn input */
+.review-rating input[type="checkbox"] {
+    display: none;
+}
+
+/* Hiển thị sao */
+.review-rating label {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffd700;
+    font-size: 20px;
+}
+
+/* Hiển thị sao khi được chọn */
+.review-rating input[type="checkbox"]:checked+label {
+    color: #ffd700;
+}
+
+#noidung {
+    color: rgb(28, 28, 28);
+}
+
+#dsdanhgia {
+    max-height: 360px;
+    overflow: auto;
+}
+
+.hp-room-items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.hp-room-item {
+    flex: 0 0 auto;
+    width: calc(100% / 4);
+    box-sizing: border-box;
+}
+
+.btn-room-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-btn {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 2px;
+    background: #fff;
+    border-bottom: 2px solid #dfa974;
+    padding: 0px;
+    max-height: 34px;
+    margin-top: 5px;
+}
+
+.more-btn:hover {
+    color: #dfa974;
+}
+
+.add-to-cart-btn {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
+}
+
+.add-to-cart-btn span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+    background-color: #dfa974;
+    padding: 5px 9px;
+    border-radius: 50%;
+    max-width: 34px;
+}
+
+.add-to-cart-btn span:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.add-to-cart-btn .hover-text {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 120px;
+    left: -40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: #222222;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.add-to-cart-btn:hover {
+    width: 120px;
+}
+
+.add-to-cart-btn:hover span:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.add-to-cart-btn:hover .hover-text {
+    opacity: 1;
+    visibility: visible;
+    left: 43px;
+}
+.heart{
+    margin-bottom: -11px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.booking-btn{
+    border-radius: 5px;
+}
+.room-details-general{
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.register-form .check-date {
+	position: relative;
+	margin-bottom: 15px;
+}
+.register-form  .check-date label {
+	font-size: 14px;
+	color: #707079;
+	display: block;
+	margin-bottom: 10px;
+}
+.register-form  .check-date input {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #19191a;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-left: 20px;
+}
+.register-form  .check-date i {
+	color: #222222;
+	position: absolute;
+	right: 18px;
+	bottom: 17px;
+}
+.register-form  .select-option {
+	margin-bottom: 15px;
+}
+.room-booking-item .rd-text h3 {
+	color: #19191a;
+	/* float: left; */
+    margin-top: 20px;
+}
+.room-booking-item .rd-text h2 {
+	color: #dfa974;
+	font-weight: 700;
+	margin-top: 15px;
+}
+.room-booking-item .rd-text h2 span {
+	font-family: "Cabin", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #19191a;
+}
+.room-booking-form{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.room-booking-section{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+.span{
+    width: auto;
+    height: auto;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: 15px;
+    /* margin-bottom: 40px; */
+}
+.span-primary{
+    background-color: #e6dcf3;
+    color: #844fc1;
+}
+.span-info{
+    background-color: #d8e7f6;
+    color: #3b86d1;
+}
+.span-success{
+    background-color: #d3f2cd;
+    color: #21bf06;
+}
+.span-danger{
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+.span-warning{
+    background-color: #fdebd0;
+    color: #f39915;
+}
+.span-secondary{
+    background-color: #e2e3e9;
+    color: #6c7293;
+}
+.btn-small{
+    padding: 0px;
+    max-height: 100px ;
+    width: auto ;
+    padding: 4px;
+    margin-top: 15px;
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+#formDanhGia
+{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 10000;
+  width: 100%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.footer-text .ft-contact ul li a:visited{
+    color: #aaaab3;
+}
+/* Thêm vào trong file CSS hoặc thẻ <style> trong trang HTML */
+.edit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Tùy chỉnh kiểu hover */
+.edit-btn:hover {
+    background-color: #d32f2f;
+}

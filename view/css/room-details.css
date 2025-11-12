@@ -1,0 +1,195 @@
+.product_description_area {
+  padding-bottom: 120px;
+  margin-top: 0px;
+}
+
+.product_description_area .nav.nav-tabs {
+  background: #e8f0f2;
+  text-align: center;
+  display: block;
+  border: none;
+  padding: 10px 0px;
+}
+
+.product_description_area .nav.nav-tabs li {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.product_description_area .nav.nav-tabs li:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 441px) {
+  .product_description_area .nav.nav-tabs li:last-child {
+    margin-top: 15px;
+  }
+}
+
+.product_description_area .nav.nav-tabs li a {
+  padding: 0px;
+  border: none;
+  line-height: 38px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 0px;
+  padding: 0px 30px;
+  color: #222222;
+  font-size: 15px;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+@media (max-width: 570px) {
+  .product_description_area .nav.nav-tabs li a {
+    padding: 0 15px;
+  }
+}
+
+.product_description_area .nav.nav-tabs li a.active {
+  color: #fff;
+  border: 1px solid transparent;
+  background: #dfa974;
+}
+
+.product_description_area .tab-content {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 30px;
+}
+
+.product_description_area .tab-content .total_rate .box_total {
+  background: #e8f0f2;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.product_description_area .tab-content .total_rate .box_total h4 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #dfa974;
+}
+
+.product_description_area .tab-content .total_rate .box_total h5 {
+  color: #222222;
+  margin-bottom: 0px;
+  font-size: 24px;
+}
+
+.product_description_area .tab-content .total_rate .box_total h6 {
+  color: #222222;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #777777;
+  font-weight: normal;
+}
+
+.product_description_area .tab-content .total_rate .rating_list {
+  margin-bottom: 30px;
+}
+
+.product_description_area .tab-content .total_rate .rating_list h3 {
+  font-size: 18px;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product_description_area .tab-content .total_rate .rating_list .list li a {
+  font-size: 14px;
+  color: #777777;
+}
+
+.product_description_area .tab-content .total_rate .rating_list .list li a i {
+  color: #fbd600;
+}
+
+.product_description_area .tab-content .total_rate .rating_list .list li:nth-child a i:last-child {
+  color: #eeeeee;
+}
+
+.product_description_area .tab-content .table {
+  margin-bottom: 0px;
+}
+
+.product_description_area .tab-content .table tbody tr td {
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.product_description_area .tab-content .table tbody tr td h5 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #777777;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+
+.product_description_area .tab-content .table tbody tr:first-child td {
+  border-top: 0px;
+}
+
+.fixed {
+  color: #19191a;
+  letter-spacing: 1px;
+  /* margin-bottom: 45px; */
+  padding-bottom: 5px;
+}
+
+.rd-reviews {
+  padding-bottom: 20px;
+  /* height: 400px; */
+}
+
+.hidden {
+  display: none;
+}
+.canvas-close {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #19191a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  padding-right: 1px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt 0.7 */
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  opacity: 0; /* Ban đầu ẩn với độ mờ 0 */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Hiệu ứng chuyển đổi trong 0.3s */
+}
+
+.overlay.active {
+  opacity: 1; /* Khi có lớp .active, hiển thị với độ mờ 1 */
+  visibility: visible;
+}
+
+/* CSS để canh giữa form booking */
+#bookingFormContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 10000; 
+}

@@ -1,0 +1,117 @@
+.tags {
+  padding: 3px 4px !important;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* CSS để canh giữa form booking */
+#addRoomFormContainer,
+#addCustomerFormContainer,
+#addServiceFormContainer,
+#addTiennghiFormContainer,
+#addBlogFormContainer,
+#updateRoomFormContainer,
+#updateImageRoomFormContainer,
+#updateCustomerFormContainer, 
+#updateServiceFormContainer,
+#formEditAbout,
+#formEditContact,
+#sendPhanhoiFormContainer,
+#updateTiennghiFormContainer,
+#addLoaiphongFormContainer,
+#updateLoaiphongFormContainer
+{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 10000;
+  width: 100%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.flex-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .flex-form {
+    display: block;
+  }
+}
+
+.form-check-input {
+  width: auto;
+}
+
+.container-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-check {
+  flex: 0 0 25%;
+  margin-bottom: 10px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  overflow-y: auto;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.table-responsive {
+  overflow-y: auto;
+  max-height: 534px;
+}
+
+.table-striped thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+#sidebar {
+  max-height: 570px;
+}
+
+.navbar-breadcrumb {
+  margin-top: -20px;
+  background-color: white;
+}
+.table-striped {
+  text-align: center;  
+}
+.table-striped td {
+  text-align: justify;  
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}
