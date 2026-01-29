@@ -62,11 +62,3 @@ define('DB_NAME', 'hotel_booking');
 * Khởi động Apache + MySQL
 * Mở trình duyệt và truy cập:
   `http://localhost/hotel-booking-web`
-
----
-
-## 🧑‍💻 Tác giả
-
-**nga4704** – người phát triển dự án.
-
----
