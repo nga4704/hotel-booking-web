@@ -12,7 +12,7 @@ Một **ứng dụng web quản lý đặt phòng khách sạn** giúp người 
 * 🛏️ **Tìm và đặt phòng**
 * 👤 **Quản lý thông tin người dùng**
 * 📸 **Upload hình ảnh khách sạn / phòng**
-* 🔐 **Admin Panel để quản lý dữ liệu hệ thống** ([GitHub][1])
+* 🔐 **Admin Panel để quản lý dữ liệu hệ thống** 
 
 ---
 
@@ -23,7 +23,7 @@ Dự án được phát triển với các công nghệ sau:
 * 🖥️ **Frontend:** HTML, CSS, JavaScript
 * ⚙️ **Backend:** PHP
 * 🗄️ **Database:** MySQL
-* ☁️ **Lưu trữ ảnh:** Firebase Storage (nếu được tích hợp) ([GitHub][1])
+* ☁️ **Lưu trữ ảnh:** Firebase Storage (nếu được tích hợp) 
 
 ---
 
@@ -62,33 +62,6 @@ define('DB_NAME', 'hotel_booking');
 * Khởi động Apache + MySQL
 * Mở trình duyệt và truy cập:
   `http://localhost/hotel-booking-web`
-
----
-
-## 📁 Cấu trúc thư mục (gợi ý)
-
-```
-hotel-booking-web/
-├── admin/              # Trang quản trị
-├── database/           # SQL file & migrations
-├── uploads/            # Hình ảnh upload
-├── view/               # Trang người dùng
-├── index.php
-├── config.php
-├── ...
-```
-
----
-
-## 🛠️ Ý tưởng phát triển tiếp theo
-
-Nếu bạn muốn mở rộng dự án, có thể cân nhắc:
-
-* ✨ **Tích hợp hệ thống đăng nhập/đăng ký hoàn chỉnh**
-* 📆 **Calendar hiển thị thời gian phòng còn trống**
-* 💳 **Thanh toán trực tuyến (Stripe / PayPal)**
-* 📊 **Dashboard thống kê cho Admin**
-* 📱 **Responsive UI & thiết kế đẹp hơn** ([GitHub Chinese][2])
 
 ---
 
