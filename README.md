@@ -1,18 +1,99 @@
-# Hotel Booking Web
+# 🏨 Hotel Booking Web
 
-Một ứng dụng web quản lý đặt phòng khách sạn, giúp người dùng có thể tìm kiếm, đặt phòng và quản lý các thông tin liên quan đến khách sạn.
+Một **ứng dụng web quản lý đặt phòng khách sạn** giúp người dùng có thể **tìm kiếm phòng, đặt phòng và quản lý dữ liệu khách sạn** — xây dựng với **HTML/CSS/JS frontend, PHP backend và MySQL database**. ([GitHub][1])
 
-## Tính năng
+---
 
-- Xem danh sách khách sạn và phòng trống
-- Đặt phòng và quản lý đặt phòng
-- Quản lý thông tin người dùng
-- Upload hình ảnh khách sạn/ phòng
-- Admin panel để quản lý dữ liệu
+## 📌 Tính năng
 
-## Công nghệ sử dụng
+✨ Những tính năng chính của dự án:
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: PHP
-- Database: MySQL 
-- Lưu trữ hình ảnh: Firebase Storage
+* 📋 **Xem danh sách khách sạn & phòng trống**
+* 🛏️ **Tìm và đặt phòng**
+* 👤 **Quản lý thông tin người dùng**
+* 📸 **Upload hình ảnh khách sạn / phòng**
+* 🔐 **Admin Panel để quản lý dữ liệu hệ thống** ([GitHub][1])
+
+---
+
+## 🧠 Công nghệ sử dụng
+
+Dự án được phát triển với các công nghệ sau:
+
+* 🖥️ **Frontend:** HTML, CSS, JavaScript
+* ⚙️ **Backend:** PHP
+* 🗄️ **Database:** MySQL
+* ☁️ **Lưu trữ ảnh:** Firebase Storage (nếu được tích hợp) ([GitHub][1])
+
+---
+
+## 🚀 Hướng dẫn cài đặt & chạy dự án
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/nga4704/hotel-booking-web.git
+cd hotel-booking-web
+```
+
+### 2. Thiết lập môi trường
+
+1. **Cài đặt XAMPP / WAMP / LAMP** để chạy server PHP + MySQL
+2. **Import database:**
+
+   * Mở phpMyAdmin → tạo database mới (ví dụ: `hotel_booking`)
+   * Import file SQL có sẵn trong thư mục `database/` (nếu có)
+
+### 3. Cấu hình kết nối
+
+Mở file cấu hình kết nối database (ví dụ: `config.php` / `db.php`) và chỉnh:
+
+```php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'hotel_booking');
+```
+
+(*Điều chỉnh theo cấu hình MySQL của bạn*)
+
+### 4. Chạy ứng dụng
+
+* Khởi động Apache + MySQL
+* Mở trình duyệt và truy cập:
+  `http://localhost/hotel-booking-web`
+
+---
+
+## 📁 Cấu trúc thư mục (gợi ý)
+
+```
+hotel-booking-web/
+├── admin/              # Trang quản trị
+├── database/           # SQL file & migrations
+├── uploads/            # Hình ảnh upload
+├── view/               # Trang người dùng
+├── index.php
+├── config.php
+├── ...
+```
+
+---
+
+## 🛠️ Ý tưởng phát triển tiếp theo
+
+Nếu bạn muốn mở rộng dự án, có thể cân nhắc:
+
+* ✨ **Tích hợp hệ thống đăng nhập/đăng ký hoàn chỉnh**
+* 📆 **Calendar hiển thị thời gian phòng còn trống**
+* 💳 **Thanh toán trực tuyến (Stripe / PayPal)**
+* 📊 **Dashboard thống kê cho Admin**
+* 📱 **Responsive UI & thiết kế đẹp hơn** ([GitHub Chinese][2])
+
+---
+
+## 🧑‍💻 Tác giả
+
+**nga4704** – người phát triển dự án.
+
+---
